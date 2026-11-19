@@ -3,166 +3,68 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
+      text: 'Metodika',
+      href: getPermalink('/#metodika'),
     },
     {
-      text: 'Pages',
-      links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
+      text: 'Folyamat és árak',
+      href: getPermalink('/#folyamat'),
     },
     {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
+      text: 'CRM Minitréning',
+      href: getPermalink('/#minitrening'),
     },
     {
       text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
+      href: getBlogPermalink(),
+    },
+    {
+      text: 'Kapcsolat',
+      href: getPermalink('/#kapcsolat'),
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
+  actions: [
+    {
+      text: 'Díjmentes konzultáció',
+      href: getPermalink('/#kapcsolat'),
+    },
+  ],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Megoldások',
       links: [
-        { text: 'Features', href: getPermalink('/#features') },
-        { text: 'Pricing', href: getPermalink('/pricing') },
-        { text: 'Services', href: getPermalink('/services') },
-        { text: 'Blog', href: getBlogPermalink() },
+        { text: 'Piackutatás és pozicionálás', href: getPermalink('/#metodika') },
+        { text: 'Leadgeneráló kampányok', href: getPermalink('/#metodika') },
+        { text: 'CRM és automatizált utánkövetés', href: getPermalink('/#minitrening') },
+        { text: 'Együttműködés és árak', href: getPermalink('/#folyamat') },
       ],
     },
     {
-      title: 'Demos',
+      title: 'Tudásanyagok',
       links: [
-        { text: 'SaaS', href: getPermalink('/homes/saas') },
-        { text: 'Startup', href: getPermalink('/homes/startup') },
-        { text: 'Mobile App', href: getPermalink('/homes/mobile-app') },
-        { text: 'Personal', href: getPermalink('/homes/personal') },
-        { text: 'Landing pages', href: getPermalink('/landing/lead-generation') },
+        { text: 'Szakmai blog', href: getBlogPermalink() },
+        { text: 'Díjmentes CRM minitréning', href: getPermalink('/#minitrening') },
       ],
     },
     {
-      title: 'Resources',
+      title: 'Kapcsolat',
       links: [
-        { text: 'Documentation', href: 'https://github.com/arthelokyo/astrowind#readme' },
-        { text: 'Skills for AI agents', href: 'https://github.com/arthelokyo/astrowind/tree/main/.agents/skills' },
-        { text: 'Releases', href: 'https://github.com/arthelokyo/astrowind/releases' },
-        { text: 'Discussions', href: 'https://github.com/arthelokyo/astrowind/discussions' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: getPermalink('/about') },
-        { text: 'Contact', href: getPermalink('/contact') },
-        { text: 'Report an issue', href: 'https://github.com/arthelokyo/astrowind/issues' },
-        { text: 'License', href: 'https://github.com/arthelokyo/astrowind/blob/main/LICENSE.md' },
+        { text: 'Díjmentes konzultáció kérése', href: getPermalink('/#kapcsolat') },
+        { text: 'Tulok Imre – Velnaxa', href: 'https://velnaxa.hu' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Általános Szerződési Feltételek', href: getPermalink('/terms') },
+    { text: 'Adatkezelési tájékoztató', href: getPermalink('/privacy') },
   ],
   socialLinks: [
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://arthelokyo.com"> Arthelokyo</a> · All rights reserved.
+    © 2026 <strong>Tulok Imre</strong> (Leadgenerálás.eu) · Minden jog fenntartva.
   `,
 };
